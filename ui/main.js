@@ -29,7 +29,7 @@ submit.onclick=function(){
     request.onreadystatechange=function(){
         if (request.readyState === XMLHttpRequest.DONE){
             //TAKE SOME ACTION
-            if (request.status===200){
+            if (request.status===200){  //successful response with 200
                 var counter = request.responseText;
                 var span=document.getElementById('count');
                 span.innerHTML=counter.toString();
